@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <marquee behavior="scroll direction="padding-right" bgcolor="red" style="color: azure;"><b>WELCOME TO VYRO WEAR LOGIN PAGE</b></marquee><br><br><br><br><br><br><br><br>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>VYRO WEAR | Login</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #d9c2a7; --white: #f7f4ef; --muted: #a7a29a; --line: #383633; }
+    body {
+      min-height: 100vh; background: #080808; color: var(--white);
+      font-family: Arial, Helvetica, sans-serif; display: grid; place-items: center;
+      padding: 24px;
+    }
+    .page {
+      width: min(1100px, 100%); min-height: 680px; display: grid;
+      grid-template-columns: 1fr 1fr; overflow: hidden; border: 1px solid #292725;
+      border-radius: 20px; background: #0d0d0c; box-shadow: 0 25px 80px #000a;
+    }
+    .visual {
+      min-height: 680px; position: relative; background: #171615;
+      background-image: linear-gradient(180deg, #0008, #0002 45%, #000b), url("C:\Users\Lenovo\OneDrive\Desktop\me\this..jpg");
+      background-size: cover; background-position: center;
+      display: flex; flex-direction: column; justify-content: space-between; padding: 34px;
+    }
+    .logo { font-weight: 900; font-size: clamp(38px, 5vw, 64px); letter-spacing: -5px; line-height: .8; }
+    .logo small { display: block; font-size: 11px; letter-spacing: 9px; margin: 12px 0 0 7px; }
+    .visual-copy { text-transform: uppercase; letter-spacing: 5px; color: var(--cream); font-size: 12px; }
+    .visual-copy strong { display: block; font-size: clamp(25px, 3vw, 38px); letter-spacing: 1px; color: white; margin-bottom: 10px; }
+    .form-side { display: flex; align-items: center; justify-content: center; padding: 48px; }
+    .form-wrap { width: 100%; max-width: 390px; }
+    .top-links { display: flex; justify-content: flex-end; align-items: center; gap: 18px; margin-bottom: 64px; }
+    .top-links a { color: var(--muted); font-size: 12px; text-decoration: none; }
+    .top-links a:hover, .register a, .forgot { color: var(--cream); }
+    .eyebrow { color: var(--cream); letter-spacing: 4px; font-size: 10px; text-transform: uppercase; margin-bottom: 15px; }
+    h1 { font-size: clamp(34px, 4vw, 48px); letter-spacing: -1.5px; margin-bottom: 10px; }
+    .sub { color: var(--muted); font-size: 13px; margin-bottom: 34px; }
+    label { display: block; font-size: 11px; color: #d8d4ce; margin: 18px 0 8px; }
+    input[type="email"], input[type="password"], input[type="text"] {
+      width: 100%; padding: 15px 16px; border: 1px solid var(--line); border-radius: 9px;
+      background: #151514; color: white; outline: none; font-size: 14px;
+    }
+    input:focus { border-color: var(--cream); box-shadow: 0 0 0 3px #d9c2a71a; }
+    .password-box { position: relative; }
+    .password-box input { padding-right: 58px; }
+    .show-pass { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); border: 0; background: none; color: var(--cream); cursor: pointer; font-size: 11px; }
+    .options { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 17px 0 24px; font-size: 11px; color: var(--muted); }
+    .remember { display: flex; align-items: center; gap: 8px; }
+    .remember input { accent-color: var(--cream); }
+    .forgot { text-decoration: none; }
+    .login-btn { width: 100%; padding: 16px; border: 0; border-radius: 9px; background: var(--cream); color: #111; font-weight: 800; font-size: 14px; cursor: pointer; transition: transform .2s, background .2s; }
+    .login-btn:hover { transform: translateY(-2px); background: #ead7c1; }
+    .divider { display: flex; align-items: center; gap: 13px; color: #77716a; font-size: 10px; margin: 24px 0; }
+    .divider:before, .divider:after { content: ""; height: 1px; background: var(--line); flex: 1; }
+    .socials { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .social { border: 1px solid var(--line); color: white; background: #141413; border-radius: 9px; padding: 13px 8px; cursor: pointer; font-size: 11px; }
+    .social:hover { border-color: var(--cream); }
+    .register { text-align: center; color: var(--muted); font-size: 12px; margin-top: 28px; }
+    .register a { font-weight: bold; text-decoration: none; }
+    .message { min-height: 18px; color: var(--cream); font-size: 11px; margin-top: 13px; text-align: center; }
+    @media (max-width: 760px) {
+      body { padding: 12px; }
+      .page { grid-template-columns: 1fr; max-width: 480px; }
+      .visual { min-height: 250px; padding: 24px; background-position: center 34%; }
+      .logo { font-size: 42px; }
+      .visual-copy strong { font-size: 24px; }
+      .form-side { padding: 30px 24px 38px; }
+      .top-links { margin-bottom: 35px; }
+    }
+    @media (max-width: 380px) { .socials { grid-template-columns: 1fr; } .options { font-size: 10px; } }
+    </style>
+</head>
+<body bgcolor="black">
+    <main class="page">
+        <section class="visual aria-label="VYRO streetwear campaign">
+        <div class="logo">VYRO<small>--WEAR--</small></div><br>
+        <div class="visual"><img src="C:\Users\Lenovo\OneDrive\Desktop\me\this1..png" width="480px" height="650"></div>
+        <div class="visual-copy"><strong>Wear your dream</strong>Built different. Not for everyone. </div>
+    </section>
+
+    <section class="form-side">
+        <div class="form-wrap"nav class="top-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="eyebrow">VYRO member access</div>
+        <h1>Welcome back<span style="color:var(--cream)">.</span></h1>
+        <p class="sub">Login to your VYRO account</p>
+<form id="loginForm">
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="example123@gmail.com" autocomplete="email" required>
+          <label for="password">Password</label>
+          <div class="password-box">
+            <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="6">
+            <button class="show-pass" type="button" id="togglePassword">SHOW</button>
+          </div>
+          <div class="options">
+            <label class="remember"><input type="checkbox" id="remember"> Remember me</label>
+            <a class="forgot" href="#" id="forgotLink">Forgot password?</a>
+          </div>
+          <button class="login-btn" type="submit">LOGIN&nbsp; →</button>
+          <p class="message" id="message" aria-live="polite"></p>
+        </form>
+
+        <div class="divider">OR</div>
+        <div class="socials">
+          <button class="social" type="button" onclick="demoSocial('Google')">◎ &nbsp; Continue with Google</button>
+          <button class="social" type="button" onclick="demoSocial('Facebook')">f &nbsp; Continue with Facebook</button>
+        </div>
+        <p class="register">New to VYRO? <a href="#" id="registerLink">Create an account</a></p>
+      </div>
+    </section>
+    </main>
+    <script>
+    const password = document.getElementById("password");
+    const toggle = document.getElementById("togglePassword");
+    const message = document.getElementById("message");
+
+    toggle.addEventListener("click", () => {
+      const hidden = password.type === "password";
+      password.type = hidden ? "text" : "password";
+      toggle.textContent = hidden ? "HIDE" : "SHOW";
+    });
+
+    document.getElementById("loginForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      if (!email || password.value.length < 6) {
+        message.textContent = "Please enter a valid email and password (6+ characters).";
+        return;
+      }
+      message.textContent = "Demo login complete. Connect a backend to verify real accounts.";
+    });
+
+    document.getElementById("forgotLink").addEventListener("click", (event) => {
+      event.preventDefault();
+      message.textContent = "Password reset needs to be connected to your email service.";
+    });
+
+    document.getElementById("registerLink").addEventListener("click", (event) => {
+      event.preventDefault();
+      message.textContent = "Create-account page can be added next.";
+    });
+
+    function demoSocial(provider) {
+      message.textContent = provider + " sign-in needs OAuth setup to work.";
+    }
+    </script>
+</body>
+</html>
